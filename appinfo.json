@@ -1,0 +1,67 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "kinncj@gmail.com",
+    "longName": "Pebble Toronto",
+    "projectType": "pebblejs",
+    "resources": {
+        "media": [
+            {
+                "file": "images/menu_icon.png",
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            },
+            {
+                "file": "images/logo_splash.png",
+                "name": "IMAGE_LOGO_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "images/tile_splash.png",
+                "name": "IMAGE_TILE_SPLASH",
+                "type": "png"
+            },
+            {
+                "file": "fonts/UbuntuMono-Regular.ttf",
+                "name": "MONO_FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "images/icon-walk.png",
+                "name": "IMAGES_ICON_WALK_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/sq_br_select.png",
+                "name": "IMAGES_SQ_BR_SELECT_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/sq_br_previous.png",
+                "name": "IMAGES_SQ_BR_PREVIOUS_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/sq_br_next.png",
+                "name": "IMAGES_SQ_BR_NEXT_PNG",
+                "type": "png"
+            },
+            {
+                "file": "images/pebbleTO.png",
+                "menuIcon": true,
+                "name": "IMAGES_PEBBLETO_PNG",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "PebbleTO",
+    "uuid": "23210387-3f98-41e2-a9eb-7c99ac792e96",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
