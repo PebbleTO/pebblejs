@@ -6,4 +6,4 @@ splashScreen.show();
 setTimeout(function() {
     splashScreen.hide();
     mainScreen.show();
-}, 400);
+}, 1000);

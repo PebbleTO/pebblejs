@@ -1,6 +1,8 @@
 var nextMeetups = require('./nextmeetups'),
+    todayMeetup = require('./todaymeetup'),
     menu        = [
-        nextMeetups
+        nextMeetups,
+        todayMeetup
 ];
 
 module.exports = menu;

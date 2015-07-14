@@ -1,26 +1,26 @@
 var UI          = require('ui'),
     menu        = require('menu'),
     mainscreen  = new UI.Menu({
-        backgroundColor: 'white',
+        backgroundColor: 'cyan',
         textColor: 'black',
-        highlightBackgroundColor: 'white',
-        highlightTextColor: 'black',
+        highlightBackgroundColor: 'red',
+        highlightTextColor: 'white',
         sections: [{
-            backgroundColor: 'black',
+            backgroundColor: 'cyan',
             title: 'Pebble Toronto',
             items: [{
-                backgroundColor: 'black',
+                backgroundColor: 'cyan',
                 title: 'Next meetups',
                 subtitle: 'Stay tunned'
             }, {
-                backgroundColor: 'black',
+                backgroundColor: 'cyan',
                 title: 'NOW!',
                 subtitle: 'Check what\'s trending!'
             }]
         }]
 });
 
-mainscreen.on('select', function(menuItem){ 
+mainscreen.on('select', function(menuItem){
     menu[menuItem.itemIndex].init();
 });
 

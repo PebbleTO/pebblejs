@@ -1,7 +1,7 @@
 var UI           = require('ui'),
-    splashscreen = new UI.Card({
-        banner:          'images/pebbleTO.png',
-        backgroundColor: 'black'
-});
+    splashscreen = new UI.Card();
+
+splashscreen.banner('IMAGES_PEBBLETO_PNG');
+splashscreen.backgroundColor('cyan');
 
 module.exports = splashscreen;

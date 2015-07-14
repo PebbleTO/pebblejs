@@ -23,7 +23,7 @@ NextMeetups.prototype.onSuccess = function(data, status, request) {
 
     data.forEach(function(event){
         var card = new UI.Card();
-        
+
         card.event = event;
 
         card.action("up",     "images/sq_br_previous.png");
@@ -40,7 +40,16 @@ NextMeetups.prototype.onSuccess = function(data, status, request) {
         card.on('click', this.bindSelect.bind(this));
         this.cards.push(card);
     }.bind(this));
-    
+
+    if(this.cards.length < 1) {
+        var card = new UI.Card();
+
+        card.event = event;
+        card.style("small");
+        card.subtitle("No future events!");
+        this.cards.push(card)
+    }
+
     this.cards[this.currentCard].show();
 };
 
@@ -48,7 +57,7 @@ NextMeetups.prototype.onError = function(error, status, request) {
     console.log('The ajax request failed: ' + error);
 };
 
-NextMeetups.prototype.bindDown = function(event){ 
+NextMeetups.prototype.bindDown = function(event){
     if(event.button !== 'down') {
         return;
     }
@@ -61,8 +70,8 @@ NextMeetups.prototype.bindDown = function(event){
         card.show();
     }
 };
-    
-NextMeetups.prototype.bindUp = function(event){ 
+
+NextMeetups.prototype.bindUp = function(event){
     if(event.button !== 'up') {
         return;
     }
@@ -75,7 +84,7 @@ NextMeetups.prototype.bindUp = function(event){
         card.show();
     }
 };
-    
+
 NextMeetups.prototype.bindSelect = function(event){
     if(event.button !== 'select') {
         return;
