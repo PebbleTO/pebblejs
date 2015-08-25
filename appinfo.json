@@ -50,7 +50,7 @@
     "shortName": "PebbleTO",
     "uuid": "23210387-3f98-41e2-a9eb-7c99ac792e96",
     "versionCode": 1,
-    "versionLabel": "1.0",
+    "versionLabel": "1.2",
     "watchapp": {
         "watchface": false
     }
